@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>はてなブログからの転記です。</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1><a href="index.html">はてなブログからの転記です。</a></h1>
+<p><span class="author">青葉台旭</span> (AobadaiAkira)</p>
+<p>転記元URL: <a href="http://aobadai-akira-3.hatenablog.com">http://aobadai-akira-3.hatenablog.com</a></p>
+<p><span class="date">2016-8-2</span>  <span class="time">10:40</span></p>
+<h2 class="entry_title">markdown 表のテスト</h2>
+<p>Tag <span class="tag">[ ブログのテスト, ウェブ ]</span></p>
+<ol>
+<li>コード表記</li>
+<li>表</li>
+</ol>
+
+
+<p>生のコードを書くときは バッククォート三連の後に言語名。そしてバッククォート三連でブロックを閉める。</p>
+
+<p>注意。コード表記でも全角文字はプロポーショナルになる時がある。（表が崩れる）</p>
+
+<hr />
+
+<pre class="code lang-markdown" data-lang="markdown" data-unlink>
+<span class="synSpecial">###</span> 果物
+ 
+|名前        |色         |値段（一番高いもの）|
+|:-----------|:---------:|-------------------:|
+|りんご      |赤         |100                 |
+|みかん      |だいだい色 |200                 |
+|パイナップル|黄色       |300                 |
+
+<span class="synSpecial">###</span> fruits
+
+|name        |color      |price(highest)      |
+|:-----------|:---------:|-------------------:|
+|apple       |red        |100                 |
+|orange      |orange     |200                 |
+|pineapple   |yellow     |300                 |
+</pre>
+
+
+<hr />
+
+<p>実際の表示例</p>
+
+<h3>果物</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">名前        </th>
+<th style="text-align:center;">色         </th>
+<th style="text-align:right;">値段（一番高いもの）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">りんご      </td>
+<td style="text-align:center;">赤         </td>
+<td style="text-align:right;">100                 </td>
+</tr>
+<tr>
+<td style="text-align:left;">みかん      </td>
+<td style="text-align:center;">だいだい色 </td>
+<td style="text-align:right;">200                 </td>
+</tr>
+<tr>
+<td style="text-align:left;">パイナップル</td>
+<td style="text-align:center;">黄色       </td>
+<td style="text-align:right;">300                 </td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>fruits</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">name        </th>
+<th style="text-align:center;">color      </th>
+<th style="text-align:right;">price（highest）    </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">apple       </td>
+<td style="text-align:center;">red        </td>
+<td style="text-align:right;">100                 </td>
+</tr>
+<tr>
+<td style="text-align:left;">orange      </td>
+<td style="text-align:center;">orange     </td>
+<td style="text-align:right;">200                 </td>
+</tr>
+<tr>
+<td style="text-align:left;">pineapple   </td>
+<td style="text-align:center;">yellow     </td>
+<td style="text-align:right;">300                 </td>
+</tr>
+</tbody>
+</table>
+
+
+
+</body>
+</html>
