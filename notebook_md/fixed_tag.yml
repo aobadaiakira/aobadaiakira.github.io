@@ -1,0 +1,6 @@
+# fixed_tag_file_list: の下に、タグ名: ファイル名という形で列挙する。
+# 例
+# fixed_tag_file_list:
+#   ウェブサービス: webservice
+#   映画感想: movie_review
+fixed_tag_file_list: {}
