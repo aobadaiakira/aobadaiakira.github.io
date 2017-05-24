@@ -148,7 +148,6 @@ article h6, nav h6, section h6 {
 
 /* -------------------------------------------------------------------------- */
 /* ナビゲーション */
-
 nav.index_list ul {
   list-style-type: none;
   padding-left: 18px;
@@ -171,7 +170,6 @@ img {
 
 /* -------------------------------------------------------------------------- */
 /* ルビ */
-
 ruby {
   ruby-align: distribute-space;
 }
@@ -182,7 +180,6 @@ ruby rt {
 
 /* -------------------------------------------------------------------------- */
 /* 傍点 */
-
 em.sidedot span {
   font-style: normal;
   background-image: url("sidedot.png");
@@ -190,6 +187,24 @@ em.sidedot span {
   background-attachment: scroll;
   background-position: center top;
   padding-top: 0.3em;
+}
+
+/* -------------------------------------------------------------------------- */
+/* テキストエリア */
+textarea {
+  font-size: 90%;
+  width: 98%;
+  border: 1px solid var(--default-line-gray);
+}
+
+/* -------------------------------------------------------------------------- */
+/* ボタン */
+button {
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--default-background);
+  border: 2px solid var(--default-line-gray);
 }
 
 /* -------------------------------------------------------------------------- */
