@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>マークダウンのdlタグ表現は標準が確定していないので気を付ける。_青葉台旭のノートブック</title>
+<link rel="stylesheet" type="text/css"  href="entry.css">
+<link rel="icon"       type="image/png" href="favicon.png">
+
+</head>
+
+<!-- ====================================================================== -->
+<!-- ===== body ===== -->
+<body>
+<div class="base_sheet">
+<div class="base_container">
+
+<header>
+  <div class="h1_and_button">
+    <div class="button_in_header">
+      <a href="mastodon_watch_anotherserver.html">&lt;&lt;前</a>|<a href="../index.html">もくじ</a>|<a href="mastodon_cant_write_boostcommet.html">次&gt;&gt;</a>
+    </div>
+    <h1>青葉台旭のノートブック</h1>
+  </div>
+</header>
+
+<!-- ===== content ===== -->
+<div class="content">
+
+<!-- ===== 記事 ===== -->
+<article class="entry">
+<!-- 記事タイトル -->
+<h2>マークダウンのdlタグ表現は標準が確定していないので気を付ける。</h2>
+
+<!-- 記事本文 -->
+<div class="main_text">
+
+<p>マークダウンのdlに対応した表現が確定していない。<br />
+一応、</p>
+
+<blockquote>
+  <p>リスト名<br />
+:  リストの注釈</p>
+</blockquote>
+
+<p>という形で解釈できるが、将来にわたってこの方法が採用されるかは未確定なので、この記法を使うときは、
+必ず、</p>
+
+<blockquote>
+  <p>&lt;!-- dl-tag-start --&gt;</p>
+</blockquote>
+
+<p>と、</p>
+
+<blockquote>
+  <p>&lt;!-- dl-tag-end --&gt;</p>
+</blockquote>
+
+<p>という行で囲む事。そうしておけば将来grepなどで探しやすい。</p>
+
+
+</div>
+
+<!-- 投稿日時 -->
+<div class="datetime">
+  <span class="date">2017-04-16</span>
+  <span class="time"> 18:47</span>
+</div>
+
+
+<!-- タグ -->
+<div class="tag_list">
+  <span class="tag">[<a href="../indax_tag_23.html">Markdown</a> <a href="../indax_tag_25.html">備忘録/Markdown</a>]</span>
+</div>
+</article>
+
+</div> <!-- end. div#content -->
+
+<footer>
+  <div class="auther_in_footer">
+    作者 <span class="author">青葉台旭</span>
+  </div>
+  <div class="button_in_footer">
+    <a href="mastodon_watch_anotherserver.html">&lt;&lt;前</a>|<a href="../index.html">もくじ</a>|<a href="mastodon_cant_write_boostcommet.html">次&gt;&gt;</a>
+  </div>
+</footer>
+
+</div> <!-- end. div#base_container -->
+</div> <!-- end. div#base_sheet -->
+</body>
+</html>

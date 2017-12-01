@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import url("../../RootStyle.css");
+
+/* ========================================================================== */
+/* 以下に、各フォルダーごとの差分を記述する。 */
+
+p.テキストエリア {
+  margin-top: 10px;
+}
+
+span.テキストエリア・タイトル {
+  font-weight: bold;
+}
+
+textarea {
+  font-size: 90%;
+  width: 98%;
+}
+
+button {
+  padding: 5px;
+  font-weight: bold;
+}

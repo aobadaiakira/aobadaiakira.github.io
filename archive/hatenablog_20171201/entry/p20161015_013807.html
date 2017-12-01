@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-67878421-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-67878421-6');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>調べてみたら HTML5 で省略可能なタグは予想以上に多かった。 | はてなブログからの転記</title>
+<link rel="stylesheet" type="text/css"  href="entry.css">
+<link rel="icon"       type="image/png" href="./favicon.png">
+
+</head>
+
+<!-- ====================================================================== -->
+
+<!-- ===== body ===== -->
+<body>
+<div class="base_sheet">
+<div class="base_container">
+
+<!-- ===== header ===== -->
+<header>
+  <div class="h1_and_button">
+    <div class="button_in_header">
+      <a href="p20161017_025708.html">&lt;&lt;前</a>|<a href="../index.html">上へ</a>|<a href="p20161014_224115.html">次&gt;&gt;</a>
+    </div>
+    <h1>はてなブログからの転記</h1>
+  </div>
+</header>
+
+<!-- ========== content ========== -->
+<div class="content">
+
+<!-- ===== 記事 ===== -->
+<article class="entry">
+
+<!-- 記事タイトル -->
+<h2>調べてみたら HTML5 で省略可能なタグは予想以上に多かった。</h2>
+
+<!-- 記事本文 -->
+<div class="main_text">
+
+<p>前回のエントリー</p>
+
+<p><iframe src="http://aobadai-akira.hatenablog.com/embed/2016/10/14/214750" title="自分のホームページに「ハーレム禁止～」と「リビング～」を載せた。 - 「ハーレム禁止の最強剣士！」ブログ" class="embed-card embed-blogcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="http://aobadai-akira.hatenablog.com/entry/2016/10/14/214750">aobadai-akira.hatenablog.com</a></cite></p>
+
+<p>で、私は、HTMLを出来るだけ平（ひら）のテキストと同じようにシンプルに使いたい。極力、手間を省いたうえで、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C6%A5%AD%A5%B9%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF">テキストエディタ</a>ーとキーボードを使って記述したい、出来ればHTML自動生成プログラムの類は使いたくない、という趣旨のことを書いた。</p>
+
+<p>それで興味が出てきて、<a class="keyword" href="http://d.hatena.ne.jp/keyword/HTML5">HTML5</a>は、仕様上、どこまで簡素化できるかを調べてみたら、予想以上にタグの省略を許していた。</p>
+
+<p>なんと、headタグも、bodyタグも、そして何とhtmlタグさえも（条件次第では）必須ではないらしい。</p>
+
+<blockquote>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;meta charset="<a class="keyword" href="http://d.hatena.ne.jp/keyword/UTF-8">UTF-8</a>"&gt;
+&lt;title>テスト。&lt;/title&gt;
+これは、ペンです。
+</pre>
+</blockquote>
+
+
+<p>上記のHTMLを、<a class="keyword" href="http://d.hatena.ne.jp/keyword/W3C">W3C</a> のバリデーションにかけたら、見事に合格して、めでたく「Document checking completed. No errors or warnings to show.」というメッセージが出た。</p>
+
+<p>たったこれだけで、<a class="keyword" href="http://d.hatena.ne.jp/keyword/W3C">W3C</a>のお墨付きを頂いた正真正銘の「正しいHTML」というわけだ。</p>
+
+<p>これで良いなら、サクッと<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C6%A5%AD%A5%B9%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF">テキストエディタ</a>を立ち上げてメモを書く程度の事も出来るかも知れない。</p>
+
+<p>私のその他のページをバリデーションにかけてみたら「h1タグはトッ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%EC%A5%D9">プレベ</a>ルだけで使う事を検討してみてくれ」というワーニングが出た。</p>
+
+<p>私は日本人なので、considerという言葉の強さが、ちょっと良く分からないが、私なりに解釈すると「h1をトッ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%EC%A5%D9">プレベ</a>ル以外で使うことは、エラーではないが、推奨はできない」程度の感じだろうか。</p>
+
+<p>「all h1 elements are treated as top-level headings by many screen readers and other tools」</p>
+
+<p>「多くの（視覚<a class="keyword" href="http://d.hatena.ne.jp/keyword/%BE%E3%B3%B7%BC%D4">障碍者</a>用の）読み上げソフトおよびその他のツールが、全てのh1要素をトッ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D7%A5%EC%A5%D9">プレベ</a>ルの見出しとして扱う」</p>
+
+<p>という意味か。</p>
+
+<p>h1の扱いに関しては、以前のエントリー、</p>
+
+<p><iframe src="http://aobadai-akira.hatenablog.com/embed/2016/09/09/235556" title="いわゆるホームページを作成中。 - 「ハーレム禁止の最強剣士！」ブログ" class="embed-card embed-blogcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="http://aobadai-akira.hatenablog.com/entry/2016/09/09/235556">aobadai-akira.hatenablog.com</a></cite></p>
+
+<p>で、h1はどの階層で使ってもＯＫ的な事を書いてしまったが、私の早とちりだったのだろうか？</p>
+
+<p>しかし、完全なエラーではない所に、<a class="keyword" href="http://d.hatena.ne.jp/keyword/W3C">W3C</a> もちょっと奥歯に物が挟まったような感じになっているな、と思ってしまうのだが。</p>
+</div>
+
+<!-- 投稿日時 -->
+<div class="datetime">
+  <span class="date">2016-10-15</span>
+  <span class="time"> 01:38</span>
+</div>
+
+<!-- カテゴリー -->
+<div class="category_list">
+  <span class="category">[<a href="../category/hatena_blog_2016.html">はてなブログ2016</a> <a href="../category/year_2016.html">2016年</a>]</span>
+</div>
+
+</article>
+
+</div>
+<!-- ========== content end ========== -->
+
+<footer>
+  <div class="auther_in_footer">
+    作者 <span class="author">青葉台旭</span>
+  </div>
+  <div class="button_in_footer">
+    <a href="p20161017_025708.html">&lt;&lt;前</a>|<a href="../index.html">上へ</a>|<a href="p20161014_224115.html">次&gt;&gt;</a>
+  </div>
+</footer>
+
+</div> <!-- div.base_container end-->
+</div> <!-- div.base_sheet end-->
+
+</body>
+</html>

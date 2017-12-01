@@ -1,0 +1,9 @@
+2017-04-15
+12:16
+[青葉台旭が作った/プログラム, 青葉台旭が作った/ウェブサイト]
+サイト移転に伴い一時公開をやめていたカクヨム記法⇔小説家になろう記法の変換ウェブ・ツールを再公開しました。
+
+1. [カクヨム記法から小説家になろう記法への変換](http://aobadaiakira.jp/web_tool/kakuyomu_to_narou/index.html)
+2. [小説家になろう記法からカクヨム記法への変換](http://aobadaiakira.jp/web_tool/narou_to_kakuyomu/index.html)
+
+よかったら使ってみてください。
