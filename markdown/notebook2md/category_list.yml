@@ -10,10 +10,18 @@ category_list:
   - name: "青葉台旭のサイト"
     yomi: "アオバダイアキラノサイト"
     id: "my_site"
+# シ
+  - name: "詩"
+    yomi: "シ"
+    id: "poem"
 # テ
   - name: "テスト"
     yomi: "テスト"
     id: "test"
+# ト
+  - name: "特に意味なし"
+    yomi: "トクニイミナシ"
+    id: "no_reason"
 # プ
   - name: "プログラム"
     yomi: "プログラム"
