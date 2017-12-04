@@ -10,6 +10,10 @@ category_list:
   - name: "青葉台旭のサイト"
     yomi: "アオバダイアキラノサイト"
     id: "my_site"
+# コ
+  - name: "コンピュータ"
+    yomi: "コンピュータ"
+    id: "computer"
 # シ
   - name: "詩"
     yomi: "シ"

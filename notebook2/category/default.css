@@ -10,6 +10,7 @@
 :root {
   --default-color:          rgb(60, 60, 60);
   --default-background:     white;
+  --default-bg-lightgray:   rgb(248,248,248);
   --default-button-gray:    rgb(160,160,160);
   --default-line-gray:      rgb(192,192,192);
   --default-line-lightgray: rgb(232,232,232);
@@ -156,6 +157,13 @@ nav.index_list ul {
 
 nav.index_list dl dd {
   margin-bottom: 0.5em;
+}
+
+/* -------------------------------------------------------------------------- */
+/* blockquote */
+blockquote {
+  background:   var(--default-bg-lightgray);
+  border-color: var(--default-line-gray);
 }
 
 /* -------------------------------------------------------------------------- */
