@@ -112,12 +112,15 @@ article h3, nav h3, section h3 {
   font-size: 130%;
   font-weight: bold;
   line-height: 1.2;
-  padding-left: 6px;
+
+  margin-top:    2.5em;
+  margin-bottom: 0.5em;
+
+  padding-left:   6px;
+  padding-bottom: 0.2em;
+
   border-left:   solid 7px var(--default-line-gray);
   border-bottom: solid 1px var(--default-line-gray);
-  margin-top:    2em;
-  margin-bottom: 0.5em;
-  padding-bottom: 0.2em;
 }
 
 /* 項タイトル */
