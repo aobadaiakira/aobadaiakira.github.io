@@ -10,6 +10,17 @@ category_list:
   - name: "青葉台旭のサイト"
     yomi: "アオバダイアキラノサイト"
     id: "my_site"
+# エ
+  - name: "映画"
+    yomi: "エイガ"
+    id: "cinema"
+  - name: "映画の感想"
+    yomi: "エイガノカンソウ"
+    id: "cinema_review"
+# カ
+  - name: "感想"
+    yomi: "カンソウ"
+    id: "review"
 # コ
   - name: "コンピュータ"
     yomi: "コンピュータ"

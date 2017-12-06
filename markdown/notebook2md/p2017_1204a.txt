@@ -1,6 +1,6 @@
 ## フロント・マターじゃダメなんだ
 
-私は、自身のサイト[aobadaiakira.jp](http://aobadaiakira.jp, "青葉台旭のホームページ")
+私は、自身のサイト[aobadaiakira.jp](http://aobadaiakira.jp "青葉台旭のホームページ")
 を自分で作った静的サイト・ジェネレータ（SSG）で生成している。
 
 しばらくはそれを使って自分で書いた文章を自分で作ったSSGでHTMLに変換し、
