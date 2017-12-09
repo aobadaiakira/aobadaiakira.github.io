@@ -7,24 +7,19 @@ category_list:
     yomi: "2017ネン"
     id: "year_2017"
 # ア
-  - name: "青葉台旭のサイト"
-    yomi: "アオバダイアキラノサイト"
-    id: "my_site"
+  - name: "青葉台旭のウェブサイトについて"
+    yomi: "アオバダイアキラノウェブサイトニツイテ"
+    id: "about_my_website"
 # エ
-  - name: "映画"
-    yomi: "エイガ"
-    id: "cinema"
+  - name: "映画について"
+    yomi: "エイガニツイテ"
+    id: "about_cinema"
   - name: "映画の感想"
     yomi: "エイガノカンソウ"
     id: "cinema_review"
-# カ
-  - name: "感想"
-    yomi: "カンソウ"
-    id: "review"
-# コ
-  - name: "コンピュータ"
-    yomi: "コンピュータ"
-    id: "computer"
+  - name: "映画を観た"
+    yomi: "エイガヲミタ"
+    id: "watched_cinema"
 # シ
   - name: "詩"
     yomi: "シ"
