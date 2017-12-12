@@ -1,0 +1,9 @@
+「小説」のページをビルドした。
+
+私の書いた全ての小説を「[http://aobadaiakira.jp/novel](http://aobadaiakira.jp/novel)」
+にアップロードした。
+
+___Aobadai Akira___
+date: 2017-12-12
+time: 9:21
+category: 青葉台旭のウェブサイトについて
