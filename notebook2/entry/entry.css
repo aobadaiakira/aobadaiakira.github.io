@@ -19,15 +19,3 @@ article.entry div.category_list {
 article, section {
   margin-bottom: 2em;
 }
-
-div.spoiler_alert p {
-  text-align: center;
-  font-size: 110%;
-  line-height: 1em;
-  font-weight: bold;
-  color: red;
-  background-color: rgb(255, 240, 240);
-  padding: 5px;
-  margin-bottom: 50px;
-  border: 1px solid red;
-}

@@ -32,6 +32,13 @@ category_list:
   - name: "特に意味なし"
     yomi: "トクニイミナシ"
     id: "no_reason"
+# ビ
+  - name: "備忘録/映画"
+    yomi: "ビボウロク/エイガ"
+    id: "todo_watch_movie"
+  - name: "備忘録/ブログ記事"
+    yomi: "ビボウロク/ブログキジ"
+    id: "todo_write_blog"
 # プ
   - name: "プログラム"
     yomi: "プログラム"
