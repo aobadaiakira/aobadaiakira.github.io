@@ -24,6 +24,10 @@ category_list:
   - name: "今日の出来事"
     yomi: "キョウノデキゴト"
     id: "todays_event"
+# ケ
+  - name: "携帯電話を買った"
+    yomi: "ケイタイデンワヲカッタ"
+    id: "bought_mobilephone"
 # シ
   - name: "詩"
     yomi: "シ"
@@ -37,6 +41,9 @@ category_list:
     yomi: "トクニイミナシ"
     id: "no_reason"
 # ビ
+  - name: "備忘録"
+    yomi: "ビボウロク"
+    id: "memo"
   - name: "備忘録/映画"
     yomi: "ビボウロク/エイガ"
     id: "todo_watch_movie"
