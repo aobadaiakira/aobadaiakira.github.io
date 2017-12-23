@@ -24,10 +24,6 @@ category_list:
   - name: "今日の出来事"
     yomi: "キョウノデキゴト"
     id: "todays_event"
-# ケ
-  - name: "携帯電話を買った"
-    yomi: "ケイタイデンワヲカッタ"
-    id: "bought_mobilephone"
 # シ
   - name: "詩"
     yomi: "シ"
@@ -35,12 +31,6 @@ category_list:
   - name: "小説について"
     yomi: "ショウセツニツイテ"
     id: "about_novel"
-  - name: "小説の感想"
-    yomi: "ショウセツノカンソウ"
-    id: "novel_review"
-  - name: "小説を読んだ"
-    yomi: "ショウセツヲヨンダ"
-    id: "read_novel"
 # テ
   - name: "テスト"
     yomi: "テスト"
@@ -70,12 +60,15 @@ category_list:
     yomi: "プログラム"
     id: "program"
 # ホ
+  - name: "本の感想"
+    yomi: "ホンノカンソウ"
+    id: "book_review"
   - name: "本を買った"
     yomi: "ホンヲカッタ"
     id: "bought_book"
   - name: "本を読んだ"
     yomi: "ホンヲヨンダ"
-    id: "bought_book_not_novel"
+    id: "read_book"
 # その他
   - name: "カテゴリーなし"
     yomi: "カテゴリーナシ"
