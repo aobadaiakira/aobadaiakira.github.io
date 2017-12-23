@@ -186,4 +186,4 @@
 ___Aobadai Akira___
 date: 2017-12-16
 time: 14:37
-category: 映画を観た 映画の感想
+category: 映画の感想
