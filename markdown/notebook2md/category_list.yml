@@ -24,6 +24,10 @@ category_list:
   - name: "今日の出来事"
     yomi: "キョウノデキゴト"
     id: "todays_event"
+# コ
+  - name: "告知/青葉台旭の小説"
+    yomi: "コクチ/アオバダイアキラノショウセツ"
+    id: "notify_my_novel"
 # シ
   - name: "詩"
     yomi: "シ"
