@@ -3,6 +3,9 @@
 # また、既存のIDを変更することもできる。
 category_list:
 # 年
+  - name: "2018年"
+    yomi: "2018ネン"
+    id: "year_2018"
   - name: "2017年"
     yomi: "2017ネン"
     id: "year_2017"
