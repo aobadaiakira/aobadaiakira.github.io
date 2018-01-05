@@ -12,11 +12,13 @@ html {
 }
 
 /* スマートフォンのフォントサイズ（横幅 414px以下） */
+/*
 @media screen and (max-width: 414px) {
   html {
     font-size: 18px;
   }
 }
+*/
 
 * {
   font-size: 100%;
