@@ -4,8 +4,17 @@
 /* ノーマライズ */
 
 /* ===== 全体 ===== */
+
+/* パソコンのフォントサイズ（横幅 481px以上） */
 html {
   font-size: 18px;
+}
+
+/* スマートフォンのフォントサイズ（横幅 480px以下） */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 * {
