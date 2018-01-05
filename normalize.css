@@ -6,19 +6,17 @@
 /* ===== 全体 ===== */
 
 
-/* パソコンのフォントサイズ（横幅 415px以上） */
+/* パソコンのフォントサイズ（横幅 481px以上） */
 html {
   font-size: 18px;
 }
 
-/* スマートフォンのフォントサイズ（横幅 414px以下） */
-/*
-@media screen and (max-width: 414px) {
+/* スマートフォンのフォントサイズ（横幅 480px以下） */
+@media screen and (max-width: 480px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
-*/
 
 * {
   font-size: 100%;
