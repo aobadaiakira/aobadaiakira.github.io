@@ -28,6 +28,9 @@ category_list:
     yomi: "キョウノデキゴト"
     id: "todays_event"
 # コ
+  - name: "こう思う"
+    yomi: "コウオモウ"
+    id: "my_thought"
   - name: "告知/青葉台旭の小説"
     yomi: "コクチ/アオバダイアキラノショウセツ"
     id: "notify_my_novel"
