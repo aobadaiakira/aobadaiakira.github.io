@@ -13,6 +13,9 @@ category_list:
   - name: "青葉台旭のウェブサイトについて"
     yomi: "アオバダイアキラノウェブサイトニツイテ"
     id: "about_my_website"
+  - name: "あるあるネタ"
+    yomi: "アルアルネタ"
+    id: "aruaru_neta"
 # エ
   - name: "映画について"
     yomi: "エイガニツイテ"
