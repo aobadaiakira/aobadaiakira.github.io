@@ -55,6 +55,13 @@ category_list:
   - name: "特に意味なし"
     yomi: "トクニイミナシ"
     id: "no_reason"
+# ヒ
+  - name: "ひとこと感想/映画"
+    yomi: "ヒトコトカンソウ/エイガ"
+    id: "short_review_movie"
+  - name: "ひとこと感想/本"
+    yomi: "ヒトコトカンソウ/ホン"
+    id: "short_review_book"
 # ビ
   - name: "備忘録"
     yomi: "ビボウロク"
