@@ -16,6 +16,10 @@ category_list:
   - name: "あるあるネタ"
     yomi: "アルアルネタ"
     id: "aruaru_neta"
+# ウ
+  - name: "ウェブ小説を読んだ"
+    yomi: "ウェブショウセツヲヨンダ"
+    id: "read_web_novel"
 # エ
   - name: "映画について"
     yomi: "エイガニツイテ"
