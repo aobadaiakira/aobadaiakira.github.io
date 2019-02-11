@@ -57,6 +57,10 @@ category_list:
   - name: "小説について"
     yomi: "ショウセツニツイテ"
     id: "about_novel"
+# タ
+  - name: "食べ物"
+    yomi: "タベモノ"
+    id: "food"
 # テ
   - name: "テスト"
     yomi: "テスト"
