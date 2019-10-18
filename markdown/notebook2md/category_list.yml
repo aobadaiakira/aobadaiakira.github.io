@@ -72,6 +72,9 @@ category_list:
   - name: "テスト"
     yomi: "テスト"
     id: "test"
+  - name: "天気"
+    yomi: "テンキ"
+    id: "weather"
 # ト
   - name: "特に意味なし"
     yomi: "トクニイミナシ"
