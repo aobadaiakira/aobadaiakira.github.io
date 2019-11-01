@@ -1,0 +1,7 @@
+結局、xcodeは一度アンインストールして最初から app store でダウンロード、インストールするのが早い。
+
+___Aobadai Akira___
+date: 2019-11-2
+time: 8:33
+category: こう思う プログラム 
+
