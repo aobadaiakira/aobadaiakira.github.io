@@ -1,7 +1,7 @@
 @charset "UTF-8";
-  
+
 html {
-  font-size: 18px; 
+  font-size: 18px;
   color: black;
   background-color: white;
 }
@@ -22,7 +22,7 @@ body {
     "Meiryo",
 
     /* その他 */
-    san-serif;
+    sans-serif;
 
   line-height: 1.2;
   color: black;
@@ -115,7 +115,7 @@ header h1#title {
   font-size: 200%;
   font-weight: bold;
   text-align: center;
-  
+
   margin: 10px;
 }
 
@@ -192,7 +192,7 @@ h2#index-name {
 nav {
   margin-top: 30px;
 }
-  
+
 nav h1 {
   font-size: 160%;
   font-weight: bold;
@@ -219,7 +219,7 @@ nav h3 {
 article {
   margin-top: 30px;
 }
-  
+
 article h1 {
   font-size: 160%;
   font-weight: bold;
@@ -239,7 +239,7 @@ article h2 {
 section {
   margin-top: 30px;
 }
-  
+
 section h1 {
   font-size: 140%;
   font-weight: bold;
