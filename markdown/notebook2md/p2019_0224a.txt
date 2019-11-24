@@ -12,6 +12,4 @@ bandai channelにて。
 ___Aobadai Akira___
 date: 2019-2-24
 time: 9:13
-category: 映画を観た 備忘録/ブログ記事
-
-
+category: 映画を観た

@@ -7,4 +7,4 @@
 ___Aobadai Akira___
 date: 2019-2-24
 time: 9:16
-category: 本を読んだ 備忘録/ブログ記事
+category: 本を読んだ
