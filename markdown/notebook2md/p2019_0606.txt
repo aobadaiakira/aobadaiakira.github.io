@@ -14,4 +14,4 @@ TOHOシネマズ六本木にて。<br>
 ___Aobadai Akira___
 date: 2019-6-6
 time: 7:33
-category: 映画を観た 備忘録/ブログ記事
+category: 映画を観た

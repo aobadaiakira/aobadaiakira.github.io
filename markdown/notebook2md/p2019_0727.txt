@@ -11,5 +11,5 @@ Amazon Video にて
 ___Aobadai Akira___
 date: 2019-7-27
 time: 12:00
-category: 映画を観た 備忘録/ブログ記事
+category: 映画を観た
 

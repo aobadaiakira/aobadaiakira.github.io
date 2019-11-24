@@ -10,5 +10,5 @@
 ___Aobadai Akira___
 date: 2019-6-10
 time: 20:43
-category: 本を読んだ 備忘録/ブログ記事
+category: 本を読んだ
 
