@@ -6,4 +6,4 @@
 ___Aobadai Akira___
 date: 2018-5-1
 time: 21:07
-category: 本を読んだ 備忘録/ブログ記事
+category: 本を読んだ

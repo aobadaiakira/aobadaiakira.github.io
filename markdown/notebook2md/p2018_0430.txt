@@ -6,4 +6,4 @@ kindle版
 ___Aobadai Akira___
 date: 2018-4-30
 time: 20:18
-category: 本を読んだ 備忘録/ブログ記事
+category: 本を読んだ
