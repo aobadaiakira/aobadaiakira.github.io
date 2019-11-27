@@ -12,4 +12,4 @@ netflixで観た。
 ___Aobadai Akira___
 date: 2018-1-1
 time: 8:07
-category: 映画を観た 備忘録/ブログ記事
+category: 映画を観た

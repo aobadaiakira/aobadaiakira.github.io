@@ -11,4 +11,4 @@
 ___Aobadai Akira___
 date: 2017-12-23
 time: 19:54
-category: 本を買った 本を読んだ 備忘録/ブログ記事
+category: 本を買った 本を読んだ

@@ -13,4 +13,4 @@
 ___Aobadai Akira___
 date: 2018-2-12
 time: 6:49
-category: 本を読んだ 備忘録/ブログ記事
+category: 本を読んだ

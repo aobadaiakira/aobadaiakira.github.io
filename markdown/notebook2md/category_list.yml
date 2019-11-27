@@ -102,9 +102,6 @@ category_list:
   - name: "備忘録/読書"
     yomi: "ビボウロク/ドクショ"
     id: "todo_read_book"
-  - name: "備忘録/ブログ記事"
-    yomi: "ビボウロク/ブログキジ"
-    id: "todo_write_blog"
 # プ
   - name: "プログラム"
     yomi: "プログラム"

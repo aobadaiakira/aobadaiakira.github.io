@@ -10,4 +10,4 @@ itunesで映画「肉の蝋人形」を観た。
 ___Aobadai Akira___
 date: 2018-1-15
 time: 9:37
-category: 映画を観た 備忘録/ブログ記事
+category: 映画を観た
