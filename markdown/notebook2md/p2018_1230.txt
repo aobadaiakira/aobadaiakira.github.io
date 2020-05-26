@@ -14,6 +14,6 @@
 ___Aobadai Akira___
 date: 2018-12-30
 time: 10:09
-category: こう思う
+category: こう思う 天気
 
 
