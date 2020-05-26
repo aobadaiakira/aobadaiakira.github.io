@@ -14,4 +14,4 @@
 ___Aobadai Akira___
 date: 2019-2-20
 time: 15:30
-category: 今日の出来事 詩 食べ物
+category: 今日の出来事 詩 食べ物 天気

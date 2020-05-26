@@ -7,4 +7,4 @@
 ___Aobadai Akira___
 date: 2019-5-9
 time: 16:34
-category: 今日の出来事
+category: 今日の出来事 天気

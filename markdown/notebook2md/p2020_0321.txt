@@ -3,4 +3,4 @@
 ___Aobadai Akira___
 date: 2020-3-21
 time: 19:42
-category: 今日の出来事 こう思う
+category: 天気 今日の出来事 こう思う

@@ -8,4 +8,4 @@
 ___Aobadai Akira___
 date: 2019-4-22
 time: 21:54
-category: 今日の出来事
+category: 今日の出来事 天気
