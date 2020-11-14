@@ -82,6 +82,10 @@ category_list:
   - name: "特に意味なし"
     yomi: "トクニイミナシ"
     id: "no_reason"
+# ニ
+  - name: "日記小説"
+    yomi: "ニッキショウセツ"
+    id: "diary_novel"
 # ヒ
   - name: "ひとこと感想/映画"
     yomi: "ヒトコトカンソウ/エイガ"
