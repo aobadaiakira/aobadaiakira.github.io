@@ -89,7 +89,7 @@ article *, nav *, section * {
 }
 
 article, nav, section {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 article p, nav p, section p {
@@ -104,7 +104,7 @@ article h2, nav h2, section h2 {
   font-size: 140%;
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 /* 章タイトル */
@@ -113,7 +113,7 @@ article h3, nav h3, section h3 {
   font-weight: bold;
   line-height: 1.2;
 
-  margin-top:    2em;
+  margin-top:    2.5em;
   margin-bottom: 0.5em;
 
   padding-left:   6px;
