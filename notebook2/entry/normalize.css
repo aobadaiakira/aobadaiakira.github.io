@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+/* ========================================================================== */
+/* ノーマライズ */
+
+/* ===== 全体 ===== */
+
+/* パソコンのフォントサイズ（横幅 481px以上） */
+html {
+  font-size: 18px;
+}
+
+/* スマートフォンのフォントサイズ（横幅 480px以下） */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+* {
+  font-size: 100%;
+  font-weight: normal;
+
+  text-align: left;
+  text-decoration: none;
+
+  margin:  0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+body {
+  font-size: 100%;
+  font-family:
+
+    /* Mac */
+    "Hiragino Sans",
+    "ヒラギノ角ゴシック",
+    "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ ProN W3",
+
+    /* Windows */
+    "游ゴシック Medium",
+    "游ゴシック",
+    "Meiryo",
+
+    /* その他 */
+    sans-serif;
+
+  line-height: 1.2;
+  color: black;
+  background-color: white;
+
+  margin: 20px;
+  border: none;
+}
+
+/* ===== 区切り線 ===== */
+hr {
+  border-top: 1px solid black;
+}
+
+/* ===== リンク ===== */
+a:link    { color: rgb(   0, 40, 255); }
+a:visited { color: rgb( 140, 30, 160); }
+a:hover   { color: rgb(   0,  0, 120); }
+
+/* ===== h ===== */
+h1 {
+  font-size: 220%;
+  margin: 0.5em 0 0.5em;
+}
+
+h2 {
+  font-size: 200%;
+  margin: 0.5em 0 0.2em;
+}
+
+h3 {
+  font-size: 180%;
+  margin: 0.5em 0 0.2em;
+}
+
+h4 {
+  font-size: 160%;
+  margin: 0.5em 0 0.2em;
+}
+
+h5 {
+  font-size: 140%;
+  margin: 0.5em 0 0.2em;
+}
+
+h6 {
+  font-size: 120%;
+  margin: 0.5em 0 0.2em;
+}
+
+/* ===== article nav section ===== */
+article {
+  margin: 0.5em 0 0.5em;
+}
+
+nav {
+  margin: 0.5em 0 0.5em;
+}
+
+section {
+  margin: 0.5em 0 0.5em;
+}
+
+/* ===== p ===== */
+p {
+  margin: 0.5em 0 0.5em;
+}
+
+/* ===== リスト ===== */
+ul {
+  margin: 0.5em 0 0.5em;
+  padding-left: 40px;
+}
+
+ul li {
+  padding-left: 0;
+}
+
+ol {
+  margin: 0.5em 0 0.5em;
+  padding-left: 40px;
+  list-style-type: decimal;
+}
+
+ol li {
+  padding-left: 0;
+}
+
+dl {
+  margin: 0.5em 0 0.5em;
+  padding-left: 20px;
+}
+
+dl dt {
+  padding-left: 0;
+}
+
+dl dd {
+  padding-left: 20px;
+}
+
+/* ===== テーブル ===== */
+table {
+  margin: 0.5em 0 0.5em;
+  padding: 0;
+  border: solid 1px black;
+  border-spacing: 0;
+}
+
+tr {
+  margin: 0;
+  padding: 0;
+}
+
+th {
+  margin: 0px;
+  padding: 5px;
+  border: solid 1px black;
+}
+
+td {
+  margin: 0;
+  padding: 5px;
+  border: solid 1px black;
+}
+
+/* ===== 引用 ===== */
+blockquote {
+  margin: 0.5em 10px 0.5em;
+  padding: 8px 10px 8px;
+  border: solid 1px black;
+}
+
+/* ===== 強調 ===== */
+strong {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+em {
+  font-style: oblique;
+  font-weight: bold;
+}

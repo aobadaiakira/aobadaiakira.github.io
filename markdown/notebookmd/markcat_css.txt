@@ -1,0 +1,5 @@
+2017-4-11
+18:56
+[備忘録/ソフトウェア]
+## markcatの表示を変えるcssファイルの場所。
+markcatを展開したディレクトリ/resources/app/renderer/css

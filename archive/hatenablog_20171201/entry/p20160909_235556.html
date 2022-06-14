@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-67878421-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-67878421-6');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>いわゆるホームページを作成中。 | はてなブログからの転記</title>
+<link rel="stylesheet" type="text/css"  href="entry.css">
+<link rel="icon"       type="image/png" href="./favicon.png">
+
+</head>
+
+<!-- ====================================================================== -->
+
+<!-- ===== body ===== -->
+<body>
+<div class="base_sheet">
+<div class="base_container">
+
+<!-- ===== header ===== -->
+<header>
+  <div class="h1_and_button">
+    <div class="button_in_header">
+      <a href="p20160914_042315.html">&lt;&lt;前</a>|<a href="../index.html">上へ</a>|<a href="p20160908_122331.html">次&gt;&gt;</a>
+    </div>
+    <h1>はてなブログからの転記</h1>
+  </div>
+</header>
+
+<!-- ========== content ========== -->
+<div class="content">
+
+<!-- ===== 記事 ===== -->
+<article class="entry">
+
+<!-- 記事タイトル -->
+<h2>いわゆるホームページを作成中。</h2>
+
+<!-- 記事本文 -->
+<div class="main_text">
+
+<p>ブログではなく、昔ながらの「いわゆる」ホームページを作成中。</p>
+
+<p><a href="http://aobadaiakira.webcrow.jp/">http://aobadaiakira.webcrow.jp/</a></p>
+
+<p>今のご時世、はてなブログを始めとするコンテンツ自動生成のウェブサービスを使えば、手軽に自分の思いの丈をウェブ上に公開できるわけだが、この辺で初心に帰って、ウェブとは何なのか、HTMLとは何なのかを、自らキーボードを叩きながら考えたくなったからだ。</p>
+
+<p>それで、ウェブクロウという、昔でいうところの「無料ホームページ・スペース」に登録した。</p>
+
+<p><iframe src="//hatenablog-parts.com/embed?url=http%3A%2F%2Fwww.webcrow.jp%2F" title="無料で使えるホームページサービス！ ウェブクロウ" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="http://www.webcrow.jp/">www.webcrow.jp</a></cite></p>
+
+<p>容量は1GBだ。</p>
+
+<p>PHPやデータベースを使わなければ、つまり、静的なホームページの公開なら、無料であるにもかかわらず広告が表示されることもない。</p>
+
+<p>同時に frickr にも登録した。容量1TBで、アップロードできるファイル１つの大きさも（何MBだったかは忘れたが）巨大で、私の持っている２０００万画素のデジカメもわざわざ縮小しなくてもアップロードできる。</p>
+
+<p>この両者の合わせ技を使えば、昔ながらの静的ウェブサイトを思う存分作れる。しかも広告表示無しで。</p>
+
+<p>良い時代になったものだ。</p>
+
+<p>さて、久しぶりに（ほとんど１０年ぶりくらいか？）HTMLを勉強し直している最中なのだが、世は正に「HTML5」時代。</p>
+
+<p>そのあまりの進化っぷりというか、言語仕様の変わりっぷりというか、いや、言語仕様というより「考え方」の変わりっぷりに驚いた。</p>
+
+<p>浦島太郎状態だ。</p>
+
+<h3>考え方が「変わった」というより、昔に比べて「本来の考え方が徹底された」というべきか。</h3>
+
+<p>「<strong>本来の考え方</strong>」の意味は、</p>
+
+<ul>
+<li>HTMLは、文章の意味構造をマークアップする言語であり、表示をマークアップする言語ではない。</li>
+<li>表示の仕方はCSSに記述する。</li>
+</ul>
+
+
+<p>……という事だ。</p>
+
+<p>これ自身は、１０年前から変わっていない。いや、HTMLが生まれた当初から変わっていない。</p>
+
+<p>しかしHTML5は、私の知っている昔のHTMLよりも「文章の構造を表現する事に特化する」というその特化ぐあいが一段と深化しているようだ。</p>
+
+<h3>一番驚いたのは、sectionタグの導入だろうか。</h3>
+
+<p>sectionタグなどを使って、文章の「入れ子構造」「階層構造」を厳密に書きなさい、と、HTML5さんは言っている訳だ。</p>
+
+<h3>考えてみれば、h1～h5 という「タグ名それ自体に含まれる数字」で階層を表現するのは、おかしい。</h3>
+
+<p>今、私がmarkdownで書いているこの記事を含め、従来のHTMLに於いては、文章の階層構造はh1～h5タグが受け持っていた。</p>
+
+<p>例えば……</p>
+
+<ul>
+<li>青葉台旭の小説集
+
+<ul>
+<li>「ハーレム禁止の最強剣士」
+
+<ul>
+<li>第一話　少年剣士アラツグ……
+
+<ul>
+<li>第一章</li>
+<li>第二章</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>という階層構造を持った文章があったとしよう。
+これは今までのHTMLでは以下のように記述する。</p>
+
+<blockquote><p><pre><code>&lt;html&gt;&lt;body&gt;
+ &lt;h1&gt;青葉台旭の小説集&lt;/h1&gt;
+   &lt;h2&gt;長編小説「ハーレム禁止の最強剣士」&lt;/h2&gt;
+     &lt;h3&gt;第一話　少年剣士アラツグ……&lt;/h3&gt;
+       &lt;h4&gt;第一章&lt;/h4&gt;
+       &lt;h4&gt;第二章&lt;/h4&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre></p></blockquote>
+
+<p>上のHTML文章は、字下げを使って、いかにも階層構造を表すように見せかけているが、h～タグというのは、あくまで表題を記述するタグであって、文章の階層を記述するための物ではない。</p>
+
+<p>ただ、h1～h5 というようにタグの名前それ自体に「序列を表す数字」が含まれているため、h～タグをあたかも「仕切り線」のように使って文章を切り分け、さらにhに続く番号によって、疑似的に階層を表しているに過ぎない。</p>
+
+<p>実際には……</p>
+
+<blockquote><p><pre><code>&lt;html&gt;&lt;body&gt;
+ &lt;h1&gt;青葉台旭の小説集&lt;/h1&gt;
+ &lt;h2&gt;長編小説「ハーレム禁止の最強剣士」&lt;/h2&gt;
+ &lt;h3&gt;第一話　少年剣士アラツグ……&lt;/h3&gt;
+ &lt;h4&gt;第一章&lt;/h4&gt;
+ &lt;h4&gt;第二章&lt;/h4&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre></p></blockquote>
+
+<p>という風に、一つの階層の中に線形に列挙されているに過ぎない。</p>
+
+<p>驚くべきことだが、「構造化マークアップ言語」であるはずのHTMLに於いて、HTML5以前は「<strong>文章それ自体を階層化するための専用タグ</strong>」は無かった。</p>
+
+<p>もちろん今までも、汎用の階層化タグである div を使って、ブログを始めとするウェブサービスはコンテンツを構造化していた訳だが、div それ自体には意味がなく、あくまでブロックを表しているだけの汎用ダグ、つまり「何でも屋」だ。</p>
+
+<h3>文章構造化専用タグ、article、section。</h3>
+
+<p>上の例をHTML5で表すと以下のようになる。</p>
+
+<blockquote><p><pre><code>&lt;html&gt;&lt;body&gt;
+ &lt;h1&gt;青葉台旭の小説集&lt;/h1&gt;
+ &lt;article&gt;
+   &lt;h1&gt;長編小説「ハーレム禁止の最強剣士」&lt;/h1&gt;
+   &lt;section&gt;
+     &lt;h1&gt;第一話　少年剣士アラツグ……&lt;/h1&gt;
+     &lt;section&gt;
+       &lt;h1&gt;第一章&lt;/h1&gt;
+     &lt;/section&gt;
+     &lt;section&gt;
+       &lt;h1&gt;第二章&lt;/h1&gt;
+     &lt;/section&gt;
+   &lt;/section&gt;
+ &lt;/article&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre></p></blockquote>
+
+<p>うむ。美しい。きれいな弓なりの字下げになっている。</p>
+
+<p>これでこそ本来の意味でのHTML＝「印付け（マークアップ）によって構造化された文章」だ。</p>
+
+<p>ところで、読者の皆さんは、上のHTML文書に於いて「<strong>全ての見出しタグが h1 になっている</strong>」ことに気づかれたと思う。</p>
+
+<p>古典的なHTML記述の規約では「１つのhtmlファイルに記述できる h1 タグは１つだけ」という事になっていたはずだ。</p>
+
+<p>しかし、この規約が表しているのは「<strong>h1を持てるのは、文章全体を表すトップレベルの階層だけ</strong>」という事だ。</p>
+
+<p>すなわち暗黙のうちに「<strong>h1タグの名前に含まれる『1』という数字に『第１階層』という構造的な意味を持たせている</strong>」</p>
+
+<p>これは「開始タグと終了タグで囲まれたブロックの入れ子構造によって文章を階層化する」というHTMLの主義からして、いかにもマズい。</p>
+
+<h3>おそらくW3Cの最終目的はh1～h5という見出しタグから、紛らわしい「数字」を取っ払う事ではないか。</h3>
+
+<p>その布石なのかどうか、HTML5に於いてはh1タグは１つのHTMLファイル中に何個でも置いて良いことになっている。</p>
+
+<p>そりゃそうだ。h1タグには、もはや「一番上（一番外側）の階層」という意味は背負わされていないのだから。</p>
+
+<p>「h1～h5 で使い分けていた見出しフォントの大小」は、どうすれば良いかって？</p>
+
+<p>それこそ見た目の話で、HTML自身が背負うべき問題では無いでしょう。div でくくってクラス分けして、CSSでどうぞ……という訳だ。</p>
+
+<h3>そうは言っても、タグは少ないに越した事は無い。</h3>
+
+<p>これからテキストエディターでしこしこHTMLを書いていこうとしている私としては、なるべくタグの少ない「素のテキスト」に近いHTMLを書いていきたい。</p>
+
+<p>だから、いたずらに div タグを増やしたくない。</p>
+
+<p>そもそも論を言っても仕方のない話だが、HTML が作られた本来の目的は「マン・マシン・リーダブル」すなわち「人間にとってもコンピュータにとっても読みやすい文章フォーマットの策定」だったはずだ。</p>
+
+<p>HTMLの「え」の字も知らない人間がHTMLソースを読んでも、とりあえずは文章の意味が通じる事を目的としていたはずだ。</p>
+
+<p>しかし「ウェブ2.0」以降、ウェブサーバーが動的なアプリケーション・サーバーと化し、HTMLブラウザーがjavascriptバリバリの「グラフィカル・インターフェース実行環境」と化して、自動生成されるHTMLソースは、とても「文章」と呼べた代物では無くなった。</p>
+
+<p>誤解しないでほしいが、それが悪いことだと言っている訳では無い。</p>
+
+<p>はてなブログを始めとする様々なウェブ・サービスは、もはや私にとっても必要不可欠なものだし、その便利さの恩恵は十二分に頂いている。</p>
+
+<p>ただ、今のHTMLはその初期の目的である「人間にとっても機械にとっても読みやすい文章」からは遠く離れて、ウェブ・サーバー⇔ウェブ・ブラウザー間のやり取りのための、機械が機械に指令を送るためのプログラミング言語というか、データ記述言語になってしまった。</p>
+
+<p>「人間のための自然言語であると同時にコンピュータのためのマークアップ言語」という本来HTMLが担うべき役割は、今なら markdown が担っているという事だろう。</p>
+
+<p>今回、自身のウェブサイトを作るにあたり、私は、テキスト・エディターで書いて読める、すなわち「HTMLを知らない人にが読んでも、ちゃんと日本語として理解できる」HTMLをアップロードしていきたいと思っている。</p>
+</div>
+
+<!-- 投稿日時 -->
+<div class="datetime">
+  <span class="date">2016-09-09</span>
+  <span class="time"> 23:55</span>
+</div>
+
+<!-- カテゴリー -->
+<div class="category_list">
+  <span class="category">[<a href="../category/hatena_blog_2016.html">はてなブログ2016</a> <a href="../category/year_2016.html">2016年</a>]</span>
+</div>
+
+</article>
+
+</div>
+<!-- ========== content end ========== -->
+
+<footer>
+  <div class="auther_in_footer">
+    作者 <span class="author">青葉台旭</span>
+  </div>
+  <div class="button_in_footer">
+    <a href="p20160914_042315.html">&lt;&lt;前</a>|<a href="../index.html">上へ</a>|<a href="p20160908_122331.html">次&gt;&gt;</a>
+  </div>
+</footer>
+
+</div> <!-- div.base_container end-->
+</div> <!-- div.base_sheet end-->
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import url("default.css");
+
+/* ========================================================================== */
+/* 以下に、各フォルダーごとの差分を記述する。 */
+
+h4.fiftysound {
+  border-left: none;
+  padding-left: 12px;
+}

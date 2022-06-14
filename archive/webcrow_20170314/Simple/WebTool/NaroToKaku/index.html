@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="UTF-8">
+<title>青葉台旭ホーム-ウェブ・ツール-小説家になろう記法からカクヨム記法への変換</title>
+
+<body>
+<h1 id="title">小説家になろう記法からカクヨム記法への変換</h1>
+
+<div id="main">
+
+<!-- ===== ページ説明 ===== -->
+<section class="ページ説明">
+<h2>免責</h2>
+以下のウェブ・ツールは、私（青葉台旭）が自分自身で使うために作りました。<br>
+一般公開をしていても、私以外の方が使用する事を想定して作られてはいません。<br>
+私以外の方が使用した結果生じた、いかなる損害に対しても青葉台旭は一切の責任を負いません。
+</section>
+
+<section class="ページ説明">
+<h2>このページについて</h2>
+小説家になろう記法で書かれた原稿をカクヨム記法に変換します。<br>
+「変換前」テキストエリアに小説家になろう記法で書かれた文章をコピーして貼り付け、「ここを押すと変換されます」というボタンをクリックすると、「変換後」テキストエリアにカクヨム記法に変換された文章が現れるので、それをコピーしてカクヨムの編集画面に貼り付けることで簡単に小説家になろうからカクヨムへ文章を移すことが出来ます。
+</section>
+
+<!-- ===== ツール本体 ===== -->
+<section>
+<h2>実行画面</h2>
+
+<p  class="テキストエリア">
+<span class="テキストエリア・タイトル">変換前</span><br>
+<textarea id="source"
+          rows="15"
+          cols="40"
+          placeholder="小説家になろう記法の文章を貼り付けてください">
+</textarea>
+</p>
+
+<p>
+<button type="button"
+        id="convert"
+        onClick="AobadaiAkira.naro2kaku.onClickConvertButton()">
+ここを押すと変換されます
+</button>
+
+<button type="button"
+        id="clear"
+        onClick="AobadaiAkira.naro2kaku.onClickClearButton()">
+クリア
+</button>
+
+</p>
+
+<p class="テキストエリア">
+<span class="テキストエリア・タイトル">変換後</span><br>
+<textarea id="result"
+          rows="15"
+          cols="40"
+          placeholder="カクヨム記法の文章が出力されます">
+</textarea>
+</p>
+
+</section>
+
+<!-- ===== 補足事項 ===== -->
+<section>
+<h2>補足事項</h2>
+
+<section class="章">
+<h2>仕様</h2>
+２０１６年１０月現在の小説家になろうとカクヨムの仕様に従います。
+以下の順番で変換します。
+
+<section class="項">
+<h2>1.傍点の変換</h2>
+小説家になろう記法の傍点<br>
+｜ぼ《・》｜う《・》｜て《・》｜ん《・》<br>
+を、<br>
+カクヨム記法の傍点<br>
+《《ぼうてん》》<br>
+に、変換します。
+</section>
+
+<section class="項">
+<h2>2.ルビの変換</h2>
+小説家になろうのルビには複数の形式があります。<br>
+<ul>
+  <li>｜任意の文字列《任意の文字列》</li>
+  <li>漢字《任意の文字列》</li>
+  <li>漢字（ひらがな又はカタカナ）</li>
+</ul>
+<br>これらを全て「｜任意の文字列《任意の文字列》」形式に統一します。<br>
+また「｜」は、全角・半角どちらでもよいことになっていますが、これを全角に統一します。<br>
+丸カッコは左右のペアが全角なら全角、半角なら半角に統一されていなければいけません。
+</section>
+
+<section class="項">
+<h2>3.丸カッコのエスケープの削除</h2>
+小説家になろうでは、丸カッコの直前に「｜」を挿入するとエスケープされて丸カッコのまま表示されます。<br>
+それを再現するために丸カッコの直前に「｜」があった場合は、それを削除します。<br>
+</section>
+
+<section class="項">
+<h2>4.その他</h2>
+あらゆる記述に対して検証している訳ではありませんので、実際の「小説家になろう」における挙動とは多少違う部分があるかも知れません。<br>
+特に、ルビなどで修飾されるべき文字列の中に「｜」や「《》」や丸カッコなどのメタ文字自身が混入している時の挙動には気をつけてください。
+</section>
+
+</section>
+
+</section>
+
+<!-- ====================================================================== -->
+<script>
+
+// 青葉台旭の名前空間
+if (typeof AobadaiAkira === "undefined") {
+  var AobadaiAkira = {};
+}
+
+// naro2kakuの名前空間
+AobadaiAkira.naro2kaku = {};
+
+// ============================================================================
+// 消去ボタンが押された。
+AobadaiAkira.naro2kaku.onClickClearButton = function() {
+
+  var input_str  = document.getElementById ('source');
+  var output_str = document.getElementById ('result');
+
+  input_str.value  = "";
+  output_str.value = "";
+}
+
+// ============================================================================
+// 変換ボタンが押された。
+AobadaiAkira.naro2kaku.onClickConvertButton = function() {
+
+  var input_str  = document.getElementById ('source');
+  var output_str = document.getElementById ('result');
+
+  // 改行コードを\nに統一する。
+  var s = input_str.value.replace(/\r\n|\r/g, "\n");
+
+  // 改行コードで分割する。
+  var lines = s.split("\n");
+  
+  // 結果の文字列
+  var result = "";
+  var firstLine = true;
+  var line = "";
+  
+  // 行ごとの処理
+  for (var i = 0; i < lines.length; i++) {
+
+    // 変換
+    line = this.convert(lines[i]);
+    
+    if (firstLine) { firstLine = false; }
+    else           { result += "\n";    }
+    result += line;
+  }
+  
+  // 結果表示用テキストエリア
+  output_str.value = result;
+};
+
+// ============================================================================
+// 小説家になろう形式からカクヨム形式への変換。
+AobadaiAkira.naro2kaku.convert = function(s) {
+
+  // 傍点を変換する。
+  var s1 = s.replace(/((\||｜).《・》)+/g, function(matchStr) {
+    var sidedot = ""
+    for (var j = 0; j < matchStr.length; j += 5) {
+      sidedot += matchStr.charAt(j + 1);
+    }
+    return ("《《" + sidedot + "》》");
+  });
+
+  var rubyLeft   = "<AOBADAI_AKIRA_RUBY_1>";
+  var rubyCenter = "<AOBADAI_AKIRA_RUBY_2>";
+  var rubyRight  = "<AOBADAI_AKIRA_RUBY_3>";
+
+  // ルビ："｜" または"|" + 吾輩《わがはい》
+  var s2 = s1.replace(
+    /(\||｜)[^\|^｜^《]+《[^《^》]+》/g,
+    function(matchStr) {
+
+    var array = matchStr.split("《");
+    var rubyA = array[0].substring(1);
+    var rubyB = array[1].substring(0, array[1].length - 1);
+    return (rubyLeft + rubyA + rubyCenter + rubyB + rubyRight);
+  });
+
+  // ルビ：漢字《かんじ》
+  var s3 = s2.replace(/[一-龠々]+《[^《^》]+》/g, function(matchStr) {
+    var array = matchStr.split("《");
+    var rubyA = array[0];
+    var rubyB = array[1].substring(0, array[1].length - 1);
+    return (rubyLeft + rubyA + rubyCenter + rubyB + rubyRight);
+  });
+
+  // ルビ：漢字（かな）　全角丸かっこ
+  var s4 = s3.replace(
+    /[一-龠々]+（[\u3040-\u309F\u30A0-\u30FF]+）/g, function(matchStr) {
+
+    var array = matchStr.split("（");
+    var rubyA = array[0];
+    var rubyB = array[1].substring(0, array[1].length - 1);
+    return (rubyLeft + rubyA + rubyCenter + rubyB + rubyRight);
+  });
+
+  // ルビ：漢字(かな)　半角丸かっこ
+  var s5 = s4.replace(
+    /[一-龠々]+\([\u3040-\u309F\u30A0-\u30FF]+\)/g, function(matchStr) {
+
+    var array = matchStr.split("(");
+    var rubyA = array[0];
+    var rubyB = array[1].substring(0, array[1].length - 1);
+    return (rubyLeft + rubyA + rubyCenter + rubyB + rubyRight);
+  });
+
+  // 丸かっこのエスケープ
+  var s6 = s5.replace(/(\||｜)（.*）/g, function(matchStr) {
+    return matchStr.substring(1);
+  });
+
+  // 丸かっこ（半角）のエスケープ
+  var s7 = s6.replace(/(\||｜)\(.*\)/g, function(matchStr) {
+    return matchStr.substring(1);
+  });
+
+  // 仮のタグを元に戻す
+  var s8 = s7.replace(new RegExp(rubyLeft, "g"), "｜")
+  var s9 = s8.replace(new RegExp(rubyCenter, "g"), "《")
+  var result = s9.replace(new RegExp(rubyRight, "g"), "》");
+
+  return result;
+};
+
+</script>
+
+</div>
+
+<p id="auther">青葉台旭</p>
+<p><a id="list-page" href="../index.html">ウェブ・ツール・リスト</a></p>
+<p><a id="home-page" href="../../index.html">ホーム</a></p>
+
+</body>
+
+</html>

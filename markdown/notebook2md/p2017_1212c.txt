@@ -1,0 +1,10 @@
+「notebook2」のページに新着情報をのせた。
+
+notebook2のインデックスページ<br>
+「[http://aobadaiakira.jp/notebook2/index.html](http://aobadaiakira.jp/notebook2/index.html)」
+に、新着情報が乗るように静的サイト・ジェネレータに変更を加えた。<br>
+
+___Aobadai Akira___
+date: 2017-12-12
+time: 9:25
+category: 青葉台旭のウェブサイトについて

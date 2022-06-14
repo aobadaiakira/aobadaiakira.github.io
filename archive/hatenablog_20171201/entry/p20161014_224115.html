@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-67878421-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-67878421-6');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>リンクのURLの大文字小文字で嵌（はま）った。 | はてなブログからの転記</title>
+<link rel="stylesheet" type="text/css"  href="entry.css">
+<link rel="icon"       type="image/png" href="./favicon.png">
+
+</head>
+
+<!-- ====================================================================== -->
+
+<!-- ===== body ===== -->
+<body>
+<div class="base_sheet">
+<div class="base_container">
+
+<!-- ===== header ===== -->
+<header>
+  <div class="h1_and_button">
+    <div class="button_in_header">
+      <a href="p20161015_013807.html">&lt;&lt;前</a>|<a href="../index.html">上へ</a>|<a href="p20161014_214750.html">次&gt;&gt;</a>
+    </div>
+    <h1>はてなブログからの転記</h1>
+  </div>
+</header>
+
+<!-- ========== content ========== -->
+<div class="content">
+
+<!-- ===== 記事 ===== -->
+<article class="entry">
+
+<!-- 記事タイトル -->
+<h2>リンクのURLの大文字小文字で嵌（はま）った。</h2>
+
+<!-- 記事本文 -->
+<div class="main_text">
+
+<p>インターネットのURLというのは、おそらくその起源を紐解けば、大昔のコンピュータの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C7%A5%A3%A5%EC%A5%AF%A5%C8">ディレクト</a>リ構造に行き当たるのだと思う。</p>
+
+<p>つまり、ローカルの<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CC%DA%B9%BD%C2%A4">木構造</a>の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C7%A5%A3%A5%EC%A5%AF%A5%C8">ディレクト</a>リにおいて、スラッシュを区切り文字にした文字列でパスを指定し、目的のファイルにたどり着くという仕組みをそのまま借用してグローバルな住所の指定に使ったのがURLの始まりだろう。</p>
+
+<p>ホームページを（手作業で）作る時には、まず、自分のローカルマシンの中に公開を想定した<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C7%A5%A3%A5%EC%A5%AF%A5%C8">ディレクト</a>リ・ツリーを作って、サイト内のリンクを全て<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%EA%C2%D0%A5%D1%A5%B9">相対パス</a>にしておけば、その<a class="keyword" href="http://d.hatena.ne.jp/keyword/%CC%DA%B9%BD%C2%A4">木構造</a>をそのままサーバーにアップロードするだけで、ウェブ上で同じようにリンクが機能する。</p>
+
+<p>ローカルマシン上の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%EA%C2%D0%A5%D1%A5%B9">相対パス</a>がそのままウェブ上の相対URL指定になる訳だ。</p>
+
+<p>で、うっかり、何も考えずにアップロードして、はまった。</p>
+
+<h3>ファイル名の大文字のところを、思わず小文字で書いてしまった。</h3>
+
+<p>そしたら、ローカルのコンピュータでは、大文字と小文字が区別されないので上手くリンクが機能してしまい、うっかりミスを見落としてサーバーにアップロードした。</p>
+
+<p>ところが、サーバーにアクセスするときには大文字小文字を厳格に区別するので、リンクが切れてしまう。</p>
+
+<p>まったく同じファイル、同じ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C7%A5%A3%A5%EC%A5%AF%A5%C8">ディレクト</a>リ構造のものをそのままアップロードしたのに、ローカルではリンクが働いて、ウェブ上ではリンクできないという現象が起きてしまった。</p>
+
+<p>後から気づけば、なんだ、それだけの事か、という話なのだが、そもそも大文字と小文字を間違えたと気づく前は、ローカルで動くのに何でサーバー上ではうまく動作しないんだ？　という不思議さに惑わされて、いろいろな事を考えてしまい、単純なミスが見えなくなってしまっていた。</p>
+</div>
+
+<!-- 投稿日時 -->
+<div class="datetime">
+  <span class="date">2016-10-14</span>
+  <span class="time"> 22:41</span>
+</div>
+
+<!-- カテゴリー -->
+<div class="category_list">
+  <span class="category">[<a href="../category/hatena_blog_2016.html">はてなブログ2016</a> <a href="../category/year_2016.html">2016年</a>]</span>
+</div>
+
+</article>
+
+</div>
+<!-- ========== content end ========== -->
+
+<footer>
+  <div class="auther_in_footer">
+    作者 <span class="author">青葉台旭</span>
+  </div>
+  <div class="button_in_footer">
+    <a href="p20161015_013807.html">&lt;&lt;前</a>|<a href="../index.html">上へ</a>|<a href="p20161014_214750.html">次&gt;&gt;</a>
+  </div>
+</footer>
+
+</div> <!-- div.base_container end-->
+</div> <!-- div.base_sheet end-->
+
+</body>
+</html>

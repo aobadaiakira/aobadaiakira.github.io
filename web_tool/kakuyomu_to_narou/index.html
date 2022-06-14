@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>カクヨム記法から小説家になろう記法への変換 | ウェブ・ツール | 青葉台旭</title>
+<link rel="stylesheet" type="text/css"  href="index.css">
+<link rel="icon"       type="image/png" href="./favicon.png">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-67878421-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-67878421-6');
+</script>
+</head>
+
+<!-- ====================================================================== -->
+
+<!-- ===== body ===== -->
+<body>
+<div class="base_sheet">
+<div class="base_container">
+
+<!-- ===== header ===== -->
+<header>
+  <div class="h1_and_button">
+    <div class="button_in_header">
+      |<a href="../index.html">上へ</a>|
+    </div>
+    <h1>カクヨム記法から小説家になろう記法への変換</h1>
+  </div>
+</header>
+
+<!-- ========== content ========== -->
+<div class="content">
+
+
+<!-- ===== ページ説明 ===== -->
+<section class="description">
+<h2>免責</h2>
+<p>
+  以下のウェブ・ツールは、私（青葉台旭）が自分自身で使うために作りました。<br>
+  一般公開をしていても、私以外の方が使用する事を想定して作られてはいません。<br>
+  私以外の方が使用した結果生じた、いかなる損害に対しても青葉台旭は一切の責任を負いません。
+</p>
+</section>
+
+<section class="description">
+<h2>このページについて</h2>
+<p>
+  カクヨム記法で書かれた原稿を小説家になろう記法に変換します。<br>
+  「変換前」テキストエリアにカクヨム記法で書かれた文章をコピーして貼り付け、
+  「ここを押すと変換されます」というボタンをクリックすると
+  「変換後」テキストエリアに小説家になろう記法に変換された文章が現れるので、
+  それをコピーして小説家になろうの編集画面に貼り付けることで
+  簡単にカクヨムから小説家になろうへ文章を移すことが出来ます。
+</p>
+</section>
+
+<!-- ===== アプリケーション部分 ===== -->
+<section>
+  <h2>実行画面</h2>
+  <p class="textarea">
+    <span class="textarea_title">変換前</span><br>
+    <textarea id="source" rows="15" cols="40" placeholder="カクヨム記法の文章を貼り付けてください"></textarea>
+  </p>
+  <p>
+    <button type="button" id="convert" onclick="AobadaiAkira.kaku2naro.onClickConvertButton()">
+      ここを押すと変換されます
+    </button>
+    <button type="button" id="clear" onclick="AobadaiAkira.kaku2naro.onClickClearButton()">
+      クリア
+    </button>
+  </p>
+  <p class="textarea">
+    <span class="textarea_title">変換後</span><br>
+    <textarea id="result" rows="15" cols="40" placeholder="小説家になろう記法の文章が出力されます"></textarea>
+  </p>
+</section>
+
+<!-- ===== 補足事項 ===== -->
+<section>
+  <h2>補足事項</h2>
+  <section>
+    <h3>仕様</h3>
+    <p>
+      ２０１６年１０月現在、メタ記号によって文章を修飾する項目は、
+    </p>
+    <ul>
+      <li>カクヨム
+        <ul>
+          <li>ルビ</li>
+          <li>傍点</li>
+        </ul>
+      </li>
+      <li>小説家になろう
+        <ul>
+          <li>ルビ</li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      と、なっています。
+    </p>
+    <p>
+      カクヨムにおけるルビの記法はそのまま小説家になろうでも使える事から、
+      ルビに関しては操作を加えていません。そのまま出力しています。
+    </p>
+    <p>
+      小説家になろうには、傍点を表す専用のメタ記号がありません。<br>
+      傍点は「傍点を振りたい文字ひとつひとつに、なか点＝『・』を、
+      ルビとして振る」という方法で、疑似的に実現しています。
+    </p>
+    <p>
+      そのため、カクヨムにおける傍点記法<br>
+      「《《ぼうてん》》」<br>
+      を、小説家になろうで使われている疑似傍点記法<br>
+      「｜ぼ《・》｜う《・》｜て《・》｜ん《・》」<br>
+      に、変換しています。<br>
+    </p>
+  </section>
+  <section>
+    <h3>転記元</h3>
+    <p>
+      このウェブ・ツールは、青葉台旭が２０１６年に、<br>
+      <a href="http://aobadaiakira.webcrow.jp/">aobadaiakira.webcrow.jp</a><br>
+      にて公開したものに若干の変更を加えて転記しました。<br>
+      元のページのURLは既に削除済みですが、
+      「<a href="http://aobadaiakira.jp/archive/webcrow_20170314/WebTool/KakuToNaro/index.html">青葉台旭の保管庫</a>」
+      に元のファイルを保管してあります。
+    </p>
+  </section>
+</section>
+
+<!-- ====================================================================== -->
+<!-- ===== javascript ===== -->
+<script>
+
+// 青葉台旭の名前空間
+if (typeof AobadaiAkira === "undefined") {
+  var AobadaiAkira = {};
+}
+
+// kaku2naroの名前空間
+AobadaiAkira.kaku2naro = {};
+
+// ============================================================================
+// 消去ボタンが押された。
+AobadaiAkira.kaku2naro.onClickClearButton = function() {
+
+  var input_str  = document.getElementById ('source');
+  var output_str = document.getElementById ('result');
+
+  input_str.value  = "";
+  output_str.value = "";
+}
+
+// ============================================================================
+// 変換ボタンが押された。
+AobadaiAkira.kaku2naro.onClickConvertButton = function() {
+
+  var input_str  = document.getElementById ('source');
+  var output_str = document.getElementById ('result');
+
+  // 改行コードを\nに統一する。
+  var s = input_str.value.replace(/\r\n|\r/g, "\n");
+
+  // 改行コードで分割する。
+  var lines = s.split("\n");
+
+  // 結果の文字列
+  var result = "";
+  var firstLine = true;
+  var line = "";
+
+  // 行ごとの処理
+  for (var i = 0; i < lines.length; i++) {
+
+    // 変換
+    line = this.convert(lines[i]);
+
+    if (firstLine) { firstLine = false; }
+    else           { result += "\n";    }
+    result += line;
+  }
+
+  // 結果表示用テキストエリア
+  output_str.value = result;
+};
+
+// ============================================================================
+// カクヨム形式から小説家になろう形式への変換。
+AobadaiAkira.kaku2naro.convert = function(s) {
+
+  // 傍点を変換する。
+  var result = s.replace(/《《[^《^》]+》》/g, function(matchStr) {
+    var striped = matchStr.substring(2, matchStr.length - 2);
+    var chrArray = striped.split("");
+    var replaced = "";
+    for (var j = 0; j < chrArray.length; j++) {
+      replaced += ("｜" + chrArray[j] + "《・》");
+    }
+    return replaced;
+  });
+  return result;
+};
+
+</script>
+
+</div>
+<!-- ========== content end ========== -->
+
+<footer>
+  <div class="auther_in_footer">
+    作者 <span class="author">青葉台旭</span>
+  </div>
+  <div class="button_in_footer">
+    |<a href="../index.html">上へ</a>|
+  </div>
+</footer>
+
+</div> <!-- div.base_container end-->
+</div> <!-- div.base_sheet end-->
+
+</body>
+</html>

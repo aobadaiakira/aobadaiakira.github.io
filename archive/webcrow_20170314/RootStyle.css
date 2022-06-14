@@ -1,0 +1,365 @@
+@charset "UTF-8";
+
+html {
+  font-size: 18px;
+  color: black;
+  background-color: white;
+}
+
+body {
+  font-size: 100%;
+  font-family:
+
+    /* Mac */
+    "Hiragino Sans",
+    "ヒラギノ角ゴシック",
+    "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ ProN W3",
+
+    /* Windows */
+    "游ゴシック Medium",
+    "游ゴシック",
+    "Meiryo",
+
+    /* その他 */
+    sans-serif;
+
+  line-height: 1.2;
+  color: black;
+  background-color: white;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+div#main,
+article,
+section,
+nav,
+p,
+ol, ul,
+img,
+em,
+strong,
+a,
+textarea,
+button,
+table
+{
+  font-size: 100%;
+  font-weight: normal;
+  text-align: left;
+  text-decoration: none;
+
+  margin:  0;
+  padding: 0;
+}
+
+div#main, article, section, nav, p, ol, ul, table {
+  line-height: 1.7em;
+  color: rgb(50, 50, 50);
+}
+
+a:link    { color: rgb(   0, 40, 255); }
+a:visited { color: rgb( 140, 30, 160); }
+a:hover   { color: rgb(   0,  0, 120); }
+
+ol {
+  padding-left: 1em;
+  list-style-type: decimal;
+}
+
+ul {
+  padding-left: 2em;
+}
+
+textarea {
+  padding: 5px;
+}
+
+button {
+  padding: 5px;
+}
+
+table {
+  margin: 0;
+  padding: 0;
+  border: solid 1px rgb(120, 120, 120);
+}
+
+tr {
+  margin: 0;
+  padding: 0;
+  border-style: none;
+}
+
+td {
+  margin: 0;
+  padding: 5px;
+  border: solid 1px rgb(120, 120, 120);
+}
+
+/* 以上ノーマライザー。 */
+/* ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* ヘッダー */
+header {
+  width: 90%;
+  max-width: 800px;
+  margin-top: 10px;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+header h1#title {
+  font-size: 200%;
+  font-weight: bold;
+  text-align: center;
+
+  margin: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* フッター */
+footer {
+  width: 90%;
+  max-width: 800px;
+  margin-top: 30px;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+footer p#date {
+  font-size: 90%;
+  text-align: right;
+}
+
+footer p#auther {
+  font-size: 120%;
+  text-align: right;
+}
+
+footer p.ページ移動 {
+  font-size: 90%;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 中央要素 */
+div.中央要素 {
+  width: 90%;
+  max-width: 730px;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/* ページ説明 */
+section.ページ説明 {
+  margin-top: 30px;
+}
+
+section.ページ説明 h1 {
+  font-size: 120%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+section.ページ説明 h2 {
+  font-size: 120%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+section.ページ説明 h3 {
+  font-size: 120%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 目次に使用されるタイトル（実質的な記事のタイトル） */
+h2#index-name {
+  margin-bottom: 30px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* nav */
+nav {
+  margin-top: 30px;
+}
+
+nav h1 {
+  font-size: 160%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+nav h2 {
+  font-size: 160%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+nav h3 {
+  font-size: 160%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 記事 */
+article {
+  margin-top: 30px;
+}
+
+article h1 {
+  font-size: 160%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+article h2 {
+  font-size: 160%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* セクション */
+section {
+  margin-top: 30px;
+}
+
+section h1 {
+  font-size: 140%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section h2 {
+  font-size: 140%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section h3 {
+  font-size: 140%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section h4 {
+  font-size: 140%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 章 */
+section.章 {
+  margin-top: 30px;
+}
+
+section.章 h1 {
+  font-size: 125%;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+section.章 h2 {
+  font-size: 125%;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+section.章 h3 {
+  font-size: 125%;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 項 */
+section.項 {
+  margin-top: 30px;
+}
+
+section.項 h1 {
+  font-size: 105%;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+section.項 h2 {
+  font-size: 105%;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+section.項 h3 {
+  font-size: 105%;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+section.項 h4 {
+  font-size: 105%;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 傍点なしの強調 */
+
+strong:not(.傍点) {
+  font-size: 1.2;
+  font-weight: bold;
+}
+
+/* 傍点 */
+strong.傍点 span {
+  background-image: url("Sidedot.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  padding-top: 0.3em;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* もくじ */
+ol.もくじ {
+  list-style-type: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 画像 */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width:  640px;
+  max-height: 640px;
+}
