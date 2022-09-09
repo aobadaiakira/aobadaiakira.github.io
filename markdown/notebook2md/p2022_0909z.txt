@@ -1,0 +1,17 @@
+## おしらせ 
+
+うかつだった。<br>
+github のファイル数上限が、１ディレクトリあたり１０００に設定されていたなんて。
+
+githubのファイル上限に対応するため、この「ノートブック２」の記事は２０２２年６月１４日付までとし、それ以降の記事を新たに作った「ノートブック３」へ移します。<br>
+以後、新たな記事の追加は「ノートブック３」にて行います。
+
+URL<br>
+[http://aobadaiakira.jp/notebook3/index.html](http://aobadaiakira.jp/notebook3/index.html)
+
+これからもよろしくお願いします。
+
+___Aobadai Akira___
+date: 2022-9-9
+time: 15:13
+category: 青葉台旭のウェブサイトについて
