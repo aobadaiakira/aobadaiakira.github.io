@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>テキストエディタをvimからemacsに替えようと思う | 青葉台旭のノートブック</title>
+<link rel="stylesheet" type="text/css"  href="entry.css">
+<link rel="icon"       type="image/png" href="./favicon.png">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-67878421-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-67878421-6');
+</script>
+</head>
+
+<!-- ====================================================================== -->
+
+<!-- ===== body ===== -->
+<body>
+<div class="base_sheet">
+<div class="base_container">
+
+<!-- ===== header ===== -->
+<header>
+  <div class="h1_and_button">
+    <div class="button_in_header">
+      |<a href="../index.html">上へ</a>|<a href="p2022_0923.html">次&gt;&gt;</a>
+    </div>
+    <h1>青葉台旭のノートブック</h1>
+  </div>
+</header>
+
+<!-- ========== content ========== -->
+<div class="content">
+
+<!-- ===== 記事 ===== -->
+<article class="entry">
+
+<!-- 記事タイトル -->
+<h2>テキストエディタをvimからemacsに替えようと思う</h2>
+
+<!-- 記事本文 -->
+<div class="main_text">
+
+<p>今までは、文章を書くときvimというテキスト・エディタを使っていた。</p>
+
+<p>これから少しずつemacsというエディタに慣れて行って、いずれはそちらをメインに使おうと思う。</p>
+
+<section>
+<h3>emacsに鞍替えしようと思った訳</h3>
+
+
+<p>vim と日本語入力の相性の悪さ。<br />
+これに尽きる。</p>
+
+<p>編集モードと通常（コマンド）モードが明確に分かれているというvim特有のインターフェース設計は、慣れると非常に使いやすい。<br />
+しかし一方でこのモード切り替え式インターフェースは、日本語を入力しようと思った途端（とたん）、酷く使いづらいものになる。</p>
+
+<p>「日本語入力中にモード変更した時の使いづらさ」を解消するためには「インプット・メソッド制御」という低レベルの操作をvimにさせる必要がある。<br />
+これが面倒くさくなってしまった。</p>
+
+<p>日本語入力を快適にするためには何らかのカスタマイズが必要である、「吊るし」の状態では使えない、という意味ではemacsも似たような物かも知れないが、それでもvimに比べれば多少はマシだろうと予想し、今回、テキスト・エディタの鞍替えに踏み切った。</p>
+</section>
+
+<section>
+<h3>一長一短</h3>
+
+
+<p>vimの使い方を一通り覚える利点として、とにかくどんなUNIX系OSにも必ずプリ・インストールされているという安心感がある。<br />
+最低でも、vi は必ず入っている。</p>
+
+<p>一方のemacsは、カーソル移動などの標準キーバインド（キーボード・ショートカット）がmacOSと共通しているというメリットがある。<br />
+iOSでさえ、カーソル移動などのキーボード・ショートカットはemacs風である。<br />
+極端な話、macやiPadなら、どんなテキストエディタを使おうが「擬似emacs」的なキー操作で入力・編集が行える。</p>
+</section>
+
+<section>
+<h3>emacs lisp</h3>
+
+
+<p>ここ5年くらいvimをメインのテキストエディタとして使って来たけれど、vim script に関しては設定ファイルを少し弄（いじ）るくらいで、それ以上の事（プログラミング）をしなかった。</p>
+
+<p>今回、せっかくemacsをメインで使う決心をしたのだから、多少はemacs lispに関して勉強したいと思う。</p>
+</section>
+
+</div>
+
+<!-- 投稿日時 -->
+<div class="datetime">
+  <span class="date">2022-09-23</span>
+  <span class="time"> 12:22</span>
+</div>
+
+<!-- カテゴリー -->
+<div class="category_list">
+  <span class="category">[<a href="../category/todays_event.html">今日の出来事</a> <a href="../category/my_thought.html">こう思う</a> <a href="../category/computer.html">コンピュータ</a> <a href="../category/year_2022.html">2022年</a>]</span>
+</div>
+
+</article>
+
+</div>
+<!-- ========== content end ========== -->
+
+<footer>
+  <div class="auther_in_footer">
+    作者 <span class="author">青葉台旭</span>
+  </div>
+  <div class="button_in_footer">
+    |<a href="../index.html">上へ</a>|<a href="p2022_0923.html">次&gt;&gt;</a>
+  </div>
+</footer>
+
+</div> <!-- div.base_container end-->
+</div> <!-- div.base_sheet end-->
+
+</body>
+</html>
