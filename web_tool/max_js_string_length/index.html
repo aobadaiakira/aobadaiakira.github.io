@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>ブラウザが許容する文字列の最大値 | ウェブ・ツール | 青葉台旭</title>
+<link rel="stylesheet" type="text/css"  href="index.css">
+<link rel="icon"       type="image/png" href="./favicon.png">
+
+</head>
+
+<!-- ====================================================================== -->
+
+<!-- ===== body ===== -->
+<body>
+<div class="base_sheet">
+<div class="base_container">
+
+<!-- ===== header ===== -->
+<header>
+  <div class="h1_and_button">
+    <div class="button_in_header">
+      |<a href="../index.html">上へ</a>|
+    </div>
+    <h1>ブラウザが許容する文字列の最大値</h1>
+  </div>
+</header>
+
+<!-- ========== content ========== -->
+<div class="content">
+
+
+<!-- ===== ページ説明 ===== -->
+<section class="description">
+<h2>免責</h2>
+<p>
+  以下のウェブ・ツールは、私（青葉台旭）が自分自身で使うために作りました。<br>
+  一般公開をしていても、私以外の方が使用する事を想定して作られてはいません。<br>
+  私以外の方が使用した結果生じた、いかなる損害に対しても青葉台旭は一切の責任を負いません。
+</p>
+</section>
+
+<section class="description">
+<h2>このページについて</h2>
+<p>
+  このブラウザ（今まさに、あなたが使っているブラウザ）の javascript 実行環境が許容する、文字列の長さの最大値を調べます。<br>
+  文字列変数に 1MB（半角 ASCII で100万文字）ずつ文字を付け足して行って、
+  エラーが補足された時点での length プロパティを調べます。
+</p>
+</section>
+
+<!-- ===== アプリケーション部分 ===== -->
+<section>
+  <h2>実行画面</h2>
+  <p>
+    <button type="button" 
+            id="checkMaxLength" 
+            onclick="AobadaiAkira.checkMaxStrLength.onClickButton()">
+      開始ボタン
+    </button>
+  </p>
+  <p id="result">
+    最大値 : 0MB
+  </p>
+</section>
+
+<!-- ===== 補足事項 ===== -->
+<section>
+  <h2>補足事項</h2>
+  <p>とくになし。</p>
+</section>
+
+<!-- ====================================================================== -->
+<!-- ===== javascript ===== -->
+<script>
+
+// 青葉台旭の名前空間
+if (typeof AobadaiAkira === "undefined") {
+  var AobadaiAkira = {};
+}
+
+// checkMaxStrLengthの名前空間
+AobadaiAkira.checkMaxStrLength = {};
+
+// ============================================================================
+// 実行ボタンが押された。
+AobadaiAkira.checkMaxStrLength.onClickButton = function() {
+  console.log('checking string max length.')
+
+  let s1KB = '123456789|'.repeat(100)
+  let s1MB = s1KB.repeat(1000)
+  let s100MB = s1MB.repeat(100)
+
+  let maxIn100MB = this.checkIn100MB(s100MB)
+  let maxIn1MB   = this.checkIn1MB(maxIn100MB, s100MB, s1MB)
+
+  let resultElem = document.getElementById('result')
+  resultElem.textContent = "最大値 : " + maxIn1MB.toString() + "MB"
+}
+
+// ============================================================================
+// 100MB ずつ文字を追加。
+AobadaiAkira.checkMaxStrLength.checkIn100MB = function(s100MB) {
+  console.log('checking in 100MB.')
+
+  let testStr = ''
+  let maxSize = 0
+  try {
+    while(true) {
+      testStr += s100MB
+      maxSize += 1
+    }
+  } catch(e) {
+    console.log('caught error.')
+    console.log(e)
+  }
+  console.log('max size is ' + maxSize.toString() + '00MB.')
+  return maxSize
+}
+
+// ============================================================================
+// 1MB ずつ文字を追加。
+AobadaiAkira.checkMaxStrLength.checkIn1MB = function(
+  startSizeIn100MB, s100MB, s1MB) {
+  
+    console.log('checking in 1MB.')
+
+  let testStr = s100MB.repeat(startSizeIn100MB)
+  let maxSize = 0
+  try {
+    while(true) {
+      testStr += s1MB
+      maxSize += 1
+    }
+  } catch(e) {
+    console.log('caught error.')
+    console.log(e)
+  }
+
+  let result = (startSizeIn100MB * 100) + maxSize
+  let m = result.toString()
+  console.log('max size is ' + m + 'MB.')
+  return result
+}
+
+</script>
+
+</div>
+<!-- ========== content end ========== -->
+
+<footer>
+  <div class="auther_in_footer">
+    作者 <span class="author">青葉台旭</span>
+  </div>
+  <div class="button_in_footer">
+    |<a href="../index.html">上へ</a>|
+  </div>
+</footer>
+
+</div> <!-- div.base_container end-->
+</div> <!-- div.base_sheet end-->
+
+</body>
+</html>
